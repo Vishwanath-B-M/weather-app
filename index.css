@@ -1,6 +1,7 @@
 body {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
     background: linear-gradient(180deg,rgb(47, 89, 148),rgb(207, 153, 53));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
      display: flex;
     flex-direction: column;
     align-items: center;
