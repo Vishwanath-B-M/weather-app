@@ -46,20 +46,26 @@ function getweatherinfo(data){
         const displaydescription=document.createElement("p");
         const weatheremoji=document.createElement("p");
 
-    
-        displaycity.textContent=city;
+        displaycity.textContent="City :"
+        displaycity.textContent+=city;
         displaycity.classList.add("displaycity");
         card.appendChild(displaycity);
 
-        displaytemp.textContent=(temp-273.15).toFixed(2);
+
+        displaytemp.textContent="Temp:"
+        displaytemp.textContent+=(temp-273.15).toFixed(2);
         displaytemp.textContent+="°C";
         displaytemp.classList.add("displaytemp");
         card.appendChild(displaytemp);
 
-        displayhumidity.textContent=humidity;
+
+        displayhumidity.textContent="Humidity :";
+        displayhumidity.textContent+=humidity;
         displayhumidity.textContent+="%";
         displayhumidity.classList.add("displayhumidity");
         card.appendChild(displayhumidity);
+
+
 
         displaydescription.textContent=description;
         displaydescription.classList.add("displaydes");
